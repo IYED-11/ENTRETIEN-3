@@ -1,13 +1,65 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
+  background: #f7f9fa;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.faq-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item.open {
+  background: whitesmoke;
+  border: 4px dashed #0d8f32;
+  color: #0d8f32;
+
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+}
+
+
+
+
+
+.faq-number {
+  color: green;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.faq-text {
+  font-size: 20px;
+
+}
+
+.faq-icon {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  margin-top: 20px;
+  line-height: 20px;
+  color: #333;
+  font-weight: bold;
 }
